@@ -1,0 +1,38 @@
+rena
+rename aba73e47443340c35526755ef79647eb
+find
+mak
+make
+mkdir prof
+mv lec_1.pdf ./hirsa/lec_1.pdf
+open_with 2
+open_with mupdf
+open_with 1
+rename
+rename assignment
+rename assignment.pdf
+open_with feh
+rename prob5a.png
+3
+
+rename solutions.pdf
+rename sol.pdf
+rename 60_second_sell
+open_with xreader
+rename feb-19.png
+rename jan-23.png
+open_with gimp
+rename lec_19-20.pdf
+open_with zathura
+rename lec15_4-20.pdf
+rename lec14_4-16.pdf
+rename cefpac.jpg
+open_with l
+rename 
+rename paraview
+search Stock
+delete
+open_with vim
+search Doc
+search rc
+open_with 

@@ -1,0 +1,49 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Specific Directory in Dotfiles #
+##################################
+/.vim/autoload
+/.vim/bundle
+/.vim/colors
+/.vim/doc
+/.vim/plugin
+/.vim/vim-latex.metainfo.xml
+/.vim/viminfo
+/.vim/.netrwhist
+
+# Logs #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+*.lock
