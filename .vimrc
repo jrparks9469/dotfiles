@@ -46,7 +46,7 @@ let g:Tex_IgnoredWarnings=
             \'Label(s) may have changed'
 
 " use markdown for vimwiki
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " configure the lightline
 let g:lightline={

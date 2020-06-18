@@ -1,15 +1,3 @@
-rena
-rename aba73e47443340c35526755ef79647eb
-find
-mak
-make
-mkdir prof
-mv lec_1.pdf ./hirsa/lec_1.pdf
-open_with 2
-open_with mupdf
-open_with 1
-rename
-rename assignment
 rename assignment.pdf
 open_with feh
 rename prob5a.png
@@ -33,6 +21,30 @@ rename paraview
 search Stock
 delete
 open_with vim
-search Doc
 search rc
+search tmo
+find tm
+find moz
+find h
+mkdir gre
+rename kaplan_study_plan.pdf
+search Doc
+search gre
+search .loacl
+search .local
+find 
+find DR
+find DOc
+find recruijj
 open_with 
+find l
+find gr
+find Doc
+find Fre
+find .l
+find .loc
+rename bi
+find ESP
+find tr
+find 6
+find loc

@@ -123,6 +123,7 @@ export PATH=$PATH:/home/john/Xfoil/bin
 export PATH=$PATH:/home/john/Avl/bin
 export PATH=$PATH:/snap/bin/
 export PATH=$PATH:/usr/brlcad/bin/
+export PATH=$PATH:/home/john/.cabal/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
