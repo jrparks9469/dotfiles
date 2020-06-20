@@ -1,4 +1,3 @@
-rename assignment.pdf
 open_with feh
 rename prob5a.png
 3
@@ -19,7 +18,6 @@ open_with l
 rename 
 rename paraview
 search Stock
-delete
 open_with vim
 search rc
 search tmo
@@ -39,7 +37,6 @@ find recruijj
 open_with 
 find l
 find gr
-find Doc
 find Fre
 find .l
 find .loc
@@ -48,3 +45,6 @@ find ESP
 find tr
 find 6
 find loc
+find Dr
+find Doc
+delete

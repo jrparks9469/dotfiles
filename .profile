@@ -27,7 +27,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 PATH="$PATH:/home/john/julia-1.0.0/bin"
-PATH="$PATH:/usr/local/MATLAB/R2018b/bin"
 
 export QT_STYLE_OVERRIDE=gtk
 
