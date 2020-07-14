@@ -47,7 +47,7 @@ let g:Tex_IgnoredWarnings=
 
 " use markdown for vimwiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'},
-                     \{'path': '~/Documents/archive/AFRL/2020/initial_research/', 'syntax': 'markdown', 'ext': '.md'}]
+                     \{'path': '~/Documents/archive/AFRL/2020/research/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " configure the lightline
 let g:lightline={

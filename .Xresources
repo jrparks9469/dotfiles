@@ -69,7 +69,8 @@ URxvt*depth:                          32
 ! URxvt*backgroundPixmap:               file[;geom]
 ! URxvt*iconFile:                       file
 
-URxvt*font:     xft:Hack:size=8
-URxvt*bodFont:  xft:Hack:size=8
+URxvt*font:             xft:Hack:style=Regular:size=8
+URxvt*boldFont:         xft:Hack:style=Bold:size=8
+URxvt*italicFont:       xft:Hack:style=Italic:size=8
 
 URxvt.perl-ext-common:  resize-font
