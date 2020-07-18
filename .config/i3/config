@@ -30,16 +30,16 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start the window compositor
-exec --no-startup-id compton
+# exec --no-startup-id compton
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # application launcher using rofi
-bindsym $mod+d exec rofi -modi drun -show drun -show-icons -display-drun 🔎
+bindsym $mod+d exec rofi -font "Hack 10" -modi drun -show drun -show-icons -display-drun RUN
 
 # change focus
 bindsym $mod+h focus left
@@ -150,18 +150,18 @@ bindsym $mod+r mode "resize"
 
 # Keybindings to open programs
 bindsym Mod1+p exec pavucontrol                 # pulseaudio controller
-bindsym Mod1+m exec urxvt -e 'ncmpcpp'          # MPD Music Client
+# bindsym Mod1+m exec xterm -e 'ncmpcpp'          # MPD Music Client
 bindsym Mod1+f exec urxvt -e 'ranger'           # File Manager
 bindsym Mod1+i exec firefox                     # Internet Browser
 
 # start applets
-exec --no-startup-id nm-applet
-exec --no-startup-id dropbox start
-exec --no-startup-id mintupdate-launch
-exec --no-startup-id slack
+# exec --no-startup-id nm-applet
+# exec --no-startup-id dropbox start
+# exec --no-startup-id mintupdate-launch
+# exec --no-startup-id slack
 
 # set the position of the output monitors
-exec xrandr --output HDMI-0 --right-of DVI-0 --output DVI-0 --primary
+# exec xrandr --output HDMI-0 --right-of DVI-0 --output DVI-0 --primary
 
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -174,11 +174,11 @@ new_window none
 new_float none
 
 # set the background
-exec feh --bg-scale --no-xinemara ~/Pictures/aurora.jpg
+exec feh --bg-scale ~/Pictures/wallpaper/wallpaper.jpg
 
 # put odd workspaces on the left monitor and even workspaces on the right monitor
-workspace 1 output DVI-0
-workspace 2 output HDMI-0
+# workspace 1 output DVI-0
+# workspace 2 output HDMI-0
 
 # add gaps
 gaps inner 15 
