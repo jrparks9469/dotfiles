@@ -3,7 +3,7 @@
     email = jrparks9469@gmail.com
     username = jrparks9469
 [core]
-    editor = vim
+    editor = nvim
     excludesfiles = ~/.gitignore
 [web]
     browser = firefox
