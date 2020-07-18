@@ -151,7 +151,7 @@ bindsym $mod+r mode "resize"
 # Keybindings to open programs
 bindsym Mod1+p exec pavucontrol                 # pulseaudio controller
 # bindsym Mod1+m exec xterm -e 'ncmpcpp'          # MPD Music Client
-bindsym Mod1+f exec urxvt -e 'ranger'           # File Manager
+bindsym Mod1+f exec xterm -e 'ranger'           # File Manager
 bindsym Mod1+i exec firefox                     # Internet Browser
 
 # start applets
