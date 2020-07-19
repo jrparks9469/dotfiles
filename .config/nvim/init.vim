@@ -26,6 +26,7 @@ Plug 'preservim/nerdtree'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'neomake/neomake'
 Plug 'majutsushi/tagbar'
+Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 filetype plugin indent on
@@ -53,3 +54,6 @@ map <C-m> :TagbarToggle<CR>
 " neomake configuration
 call neomake#configure#automake('nrwi', 500)
 let g:nomake_open_list=2
+
+" deoplete config
+let g:deoplete#enable_at_startup = 1
