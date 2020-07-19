@@ -25,6 +25,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'neomake/neomake'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 filetype plugin indent on
