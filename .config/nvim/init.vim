@@ -37,18 +37,13 @@ let g:lightline = {"colorscheme":"gruvbox"}
 
 "hi Normal guibg=NONE ctermbg=NONE
 
-"let g:tex_flavor='latex'
-"let g:Tex_DefaultTargetFormat='pdf'
-"let g:Tex_CompileRule_pdf='pdflatex -synctex=1 -interaction=nonstopmode --output-directory=build --shell-escape $*'
-"let g:Tex_ViewRuleComplete_pdf='zathura build/$*.pdf &'
-"let g:Tex_IgnoredWarnings=
-"            \'Label(s) may have changed'
-"
-"" use markdown for vimwiki
-"let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'},
-"                     \{'path': '~/Documents/archive/AFRL/2020/initial_research/', 'syntax': 'markdown', 'ext': '.md'}]
-"
-"
-"" toggle nerdtree and tagbar
-"map <C-n> :NERDTreeToggle<CR>
-"map <C-m> :TagbarToggle<CR>
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf='pdflatex -synctex=1 -interaction=nonstopmode --output-directory=build --shell-escape $*'
+let g:Tex_ViewRuleComplete_pdf='zathura build/$*.pdf &'
+let g:Tex_IgnoredWarnings=
+            \'Label(s) may have changed'
+
+" toggle nerdtree and tagbar
+map <C-n> :NERDTreeToggle<CR>
+map <C-m> :TagbarToggle<CR>
