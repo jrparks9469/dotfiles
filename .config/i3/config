@@ -165,7 +165,8 @@ exec --no-startup-id mintupdate-launch
 exec --no-startup-id slack
 
 # set the position of the output monitors
-exec xrandr --output HDMI-0 --right-of DVI-0 --output DVI-0 --primary
+exec xrandr --output DVI-0 --primary
+exec xrandr --output HDMI-0 --right-of DVI-0
 
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
