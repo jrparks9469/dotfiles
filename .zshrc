@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 alias v='vim'
 alias vi='vim'
 alias l='ls -l'
-alias ll='ls la'
+alias ll='ls -la'
 
 # add to path
 export PATH=$PATH:/home/john/OpenVSP/OpenVSP-3.17.1-Linux
