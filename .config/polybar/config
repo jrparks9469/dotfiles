@@ -54,6 +54,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = "Noto Sans Symbols2:size=10;1"
+font-4 = "FontAwesome:style=Regular;2"
 
 modules-left = power i3
 modules-center = mpd
@@ -308,7 +309,7 @@ label = %percentage:2%%
 
 [module/power]
 type = custom/text
-content = " ⏻"
+content = "%{O10}"
 click-left = ~/.config/i3/logout.sh &
 
 [module/memory]

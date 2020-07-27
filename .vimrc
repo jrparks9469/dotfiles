@@ -29,6 +29,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'ycm-core/youcompleteme'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,3 +58,7 @@ let g:lightline={
 " toggle nerdtree and tagbar
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
+
+" gruvbox terminal colors
+let g:gruvbox_termcolors='256'
+let g:gruvbox_contrast_dark='medium'
