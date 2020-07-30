@@ -36,7 +36,7 @@ floating_modifier $mod
 exec --no-startup-id compton
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty #urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -153,8 +153,8 @@ bindsym $mod+r mode "resize"
 
 # Keybindings to open programs
 bindsym Mod1+p exec pavucontrol                 # pulseaudio controller
-bindsym Mod1+m exec urxvt -e 'ncmpcpp'          # MPD Music Client
-bindsym Mod1+f exec urxvt -e 'ranger'           # File Manager
+bindsym Mod1+m exec alacritty -e 'ncmpcpp'          # MPD Music Client
+bindsym Mod1+f exec alacritty -e 'ranger'           # File Manager
 bindsym Mod1+i exec firefox                     # Internet Browser
 bindsym Mod1+z exec zathura                     # pdf viewer
 
