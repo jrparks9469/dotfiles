@@ -29,6 +29,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'ycm-core/youcompleteme'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-fugitive'
 Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
@@ -53,7 +54,14 @@ let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext'
 " configure the lightline
 let g:lightline={
     \ 'colorscheme':'wombat',
-    \}
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste'],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
+    \ }
 
 " toggle nerdtree and tagbar
 map <C-n> :NERDTreeToggle<CR>
