@@ -5,8 +5,9 @@ set $mod Mod4
 # is used in the bar {} block below.
 font xft:Hack # pango:monospace 8
 
-# Colors         border  bckgnd  text    indic   cld-brdr
-client.focused  #444444 #161b1d #7ea2b4 #bd2c40 #555555
+# Colors           border  bckgnd  text    indic   cld-brdr
+client.focused    #ebdbb2 #282828 #ebdbb2 #ebdbb2 #ebdbb2
+client.unfocused  #282828 #282828 #ebdbb2 #ebdbb2 #ebdbb2
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -137,12 +138,10 @@ bindsym Mod1+z exec zathura                     # pdf viewer
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# hide edge borders on the top and bottom
-hide_edge_borders both
-
-# remove border pixels
-new_window none 
-new_float none
+# define border width
+default_border pixel 2
+default_floating_border pixel 2
+hide_edge_borders none
 
 # set the background
 exec feh --bg-scale ~/Pictures/wallpaper.jpg

@@ -55,7 +55,8 @@ let g:lightline = {
     \ },
     \ }
 
-"hi Normal guibg=NONE ctermbg=NONE
+" vimwiki configuations
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
