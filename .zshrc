@@ -34,5 +34,5 @@ bindkey "\e[F"  end-of-line
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
-alias l='ls -la'
+alias l='ls -l'
 alias ll='ls -la'

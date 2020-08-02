@@ -22,10 +22,12 @@ call plug#begin()
 
 Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
 Plug 'neomake/neomake'
 Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
@@ -35,8 +37,23 @@ filetype plugin indent on
 syntax on
 
 set background=dark
-colorscheme "gruvbox"
-let g:lightline = {"colorscheme":"gruvbox"}
+colorscheme gruvbox
+
+" gruvbox terminal colors
+let g:gruvbox_termcolors='256'
+let g:gruvbox_contrast_dark='medium'
+
+" configure lightlight
+let g:lightline = {
+    \ 'colorscheme':'gruvbox',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste'],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+    \ },
+    \ }
 
 "hi Normal guibg=NONE ctermbg=NONE
 
