@@ -13,5 +13,7 @@ polybar bar2 >>/tmp/polybar2.log 2>&1 &
 
 # xrandr monitors
 polybar --reload leftbar &
+polybar --reload rightbar &
+# polybar --reload centerbar &
 echo "Bars launched..."
 

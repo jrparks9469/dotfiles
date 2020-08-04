@@ -17,7 +17,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #282828 
-background-alt = #c0444444
+background-alt = #444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #ebdbb2
 foreground-alt = #ebdbb2
@@ -26,24 +26,28 @@ secondary = #cc241d
 alert = #cc241d
 
 [bar/leftbar]
-width = 100%
+override-redirect = true
+
+width = 310
 height = 25
 
-radius = 0 
+offset-x = 15
+offset-y = 10
+
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+border-size = 2
+border-color = ${colors.foreground}
+
 line-size = 2
 line-color = #f00
 
-border-size = 0
-border-bottom-size = 0
-border-color = #00000000
-
 padding-left = 0
-padding-right = 2
+padding-right = 5
 
 module-margin-left = 2
 module-margin-right = 2
@@ -55,7 +59,77 @@ font-3 = Font Awesome 5 Free Regular:size=12;2
 font-4 = Font Awesome 5 Brands Regular:size=12;2
 
 modules-left = power i3
-modules-right = cpu battery date
+
+[bar/rightbar]
+override-redirect = true
+
+width = 335
+height = 25
+
+offset-x = 1570
+offset-y = 10
+
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 2
+border-color = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+padding-left = 0
+padding-right = 5
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = NotoSans:style=Regular:size=12;2
+font-1 = siji:pixelsize=11;1
+font-2 = Font Awesome 5 Free Solid:size=12;2
+font-3 = Font Awesome 5 Free Regular:size=12;2
+font-4 = Font Awesome 5 Brands Regular:size=12;2
+
+modules-right = pulseaudio cpu battery date
+
+[bar/centerbar]
+override-redirect = true
+
+width = 500
+height = 25
+
+offset-x = 710
+offset-y = 10
+
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 2
+border-color = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+padding-left = 0
+padding-right = 5
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = NotoSans:style=Regular:size=12;2
+font-1 = siji:pixelsize=11;1
+font-2 = Font Awesome 5 Free Solid:size=12;2
+font-3 = Font Awesome 5 Free Regular:size=12;2
+font-4 = Font Awesome 5 Brands Regular:size=12;2
+font-5 = FuraCode Nerd Font:size=12;3
+
+modules-center = firefox bottom weather
 
 [module/i3]
 type = internal/i3
@@ -106,15 +180,33 @@ type = custom/text
 content = "%{O15}"
 click-left = ~/.config/i3/logout.sh &
 
+[module/firefox]
+type = custom/text
+content = "%{O15} "
+click-left = firefox &
+
+[module/bottom]
+type = custom/text
+content = "%{T6}%{T-} "
+click-left = alacritty -e 'btm' &
+
+[module/weather]
+type = custom/text
+content = "%{T6}"
+click-left = alacritty --hold -e curl wttr.in &
+
+[module/weather]
+
 [module/date]
 type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+; time-alt = %H:%M:%S
+time-alt = 
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -154,3 +246,30 @@ animation-discharging-1 = 
 animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+bar-volume-width = 5
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
