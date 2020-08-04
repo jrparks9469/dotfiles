@@ -1,7 +1,9 @@
 sw_volume: 100
 audio_device_state:1:MPD
 audio_device_state:1:Visualizer feed
-state: stop
+state: pause
+current: 0
+time: 69.334000
 random: 0
 repeat: 0
 single: 0
@@ -10,4 +12,41 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/09 Ring Them Bells.mp3
+1:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/10 Gotta Serve Somebody.mp3
+2:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/11 Series Of Dreams.mp3
+3:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/12 Brownsville Girl.mp3
+4:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/13 Under The Red Sky.mp3
+5:Bob Dylan/Bob Dylan's Greatest Hits Volume 3/14 Knockin' On Heaven's Door.mp3
+6:Joe Cocker/Joe Cocker's Greatest Hits/01 With A Little Help From My Friend.mp3
+7:Joe Cocker/Joe Cocker's Greatest Hits/02 Woman To Woman.mp3
+8:Joe Cocker/Joe Cocker's Greatest Hits/03 The Jealous Kind.mp3
+9:Joe Cocker/Joe Cocker's Greatest Hits/04 Black-Eyed Blues.mp3
+10:Joe Cocker/Joe Cocker's Greatest Hits/05 I Think It's Going To Rain Today.mp3
+11:Joe Cocker/Joe Cocker's Greatest Hits/06 Cry Me A River.mp3
+12:Joe Cocker/Joe Cocker's Greatest Hits/07 You Are So Beautiful.mp3
+13:Joe Cocker/Joe Cocker's Greatest Hits/08 Feeling Alright.mp3
+14:Joe Cocker/Joe Cocker's Greatest Hits/09 Delta Lady.mp3
+15:Joe Cocker/Joe Cocker's Greatest Hits/10 Darling Be Home Soon.mp3
+16:Joe Cocker/Joe Cocker's Greatest Hits/11 High Time We Went.mp3
+17:Joe Cocker/Joe Cocker's Greatest Hits/12 The Letter.mp3
+18:Leonard Cohen/Songs of Love and Hate/Avalanche.mp3
+19:Leonard Cohen/Songs of Love and Hate/Last Year's Man.mp3
+20:Leonard Cohen/Songs of Love and Hate/Dress Rehearsal Rag.mp3
+21:Leonard Cohen/Songs of Love and Hate/Diamonds in the Mine.mp3
+22:Leonard Cohen/Songs of Love and Hate/Love Calls You by Your Name.mp3
+23:Leonard Cohen/Songs of Love and Hate/Famous Blue Raincoat.mp3
+24:Leonard Cohen/Songs of Love and Hate/Sing Another Song, Boys.mp3
+25:Leonard Cohen/Songs of Love and Hate/Joan of Arc.mp3
+26:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/01 My My, Hey Hey (Out Of The Blue).mp3
+27:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/02 Thrasher.mp3
+28:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/03 Ride My Llama.mp3
+29:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/04 Pocahontas.mp3
+30:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/05 Sail Away.mp3
+31:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/06 Powderfinger.mp3
+32:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/07 Welfare Mothers.mp3
+33:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/08 Sedan Delivery.mp3
+34:Neil Young & Crazy Horse/Rust Never Sleeps [Live]/09 Hey Hey, My My (Into The Black).mp3
+35:Nektar/Remember The Future/01 Remember The Future (Part 1).mp3
+36:Nektar/Remember The Future/02 Remember The Future (Part 2).mp3
 playlist_end
