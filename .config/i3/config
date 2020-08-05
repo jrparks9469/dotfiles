@@ -180,7 +180,7 @@ new_window pixel 2
 new_float pixel 2
 
 # set the background
-exec feh --bg-scale --no-xinemara ~/Pictures/aurora.jpg
+exec feh --bg-scale --no-xinerama ~/Pictures/Backgrounds/gruv-wallpaper.jpg
 
 # put odd workspaces on the left monitor and even workspaces on the right monitor
 workspace 1 output DVI-0
