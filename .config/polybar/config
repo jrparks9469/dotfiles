@@ -27,6 +27,7 @@ alert = #cc241d
 
 [bar/leftbar]
 override-redirect = true
+wm-restack = i3
 
 width = 310
 height = 25
@@ -62,6 +63,7 @@ modules-left = power i3
 
 [bar/rightbar]
 override-redirect = true
+wm-restack = i3
 
 width = 335
 height = 25
