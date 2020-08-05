@@ -12,7 +12,9 @@ polybar bar1 >>/tmp/polybar1.log 2>&1 &
 polybar bar2 >>/tmp/polybar2.log 2>&1 &
 
 # xrandr monitors
-polybar --reload leftbar &
-polybar --reload rightbar &
+polybar --reload lleftbar &
+polybar --reload rleftbar &
+polybar --reload lrightbar &
+polybar --reload rrightbar &
 echo "Bars launched..."
 

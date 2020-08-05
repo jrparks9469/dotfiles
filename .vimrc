@@ -37,7 +37,8 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 syntax on
-colorscheme slate
+set background=dark
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 
 let g:tex_flavor='latex'
@@ -46,6 +47,7 @@ let g:Tex_CompileRule_pdf='pdflatex -synctex=1 -interaction=nonstopmode --output
 let g:Tex_ViewRuleComplete_pdf='zathura build/$*.pdf &'
 let g:Tex_IgnoredWarnings=
             \'Label(s) may have changed'
+let g:Tex_GotoError=0
 
 " use markdown for vimwiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'},
