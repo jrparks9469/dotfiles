@@ -61,6 +61,8 @@ font-4 = "FontAwesome:style=Regular;2"
 
 modules-left = power
 
+wm-restack = i3
+
 [bar/rleftbar]
 override-redirect = true
 monitor = ${env:MONITOR:DVI-0}
@@ -97,6 +99,8 @@ font-4 = "FontAwesome:style=Regular;2"
 
 modules-right = i3
 
+wm-restack = i3
+
 [bar/lrightbar]
 override-redirect = true
 monitor = ${env:MONITOR:HDMI-0}
@@ -131,6 +135,8 @@ font-2 = siji:pixelsize=10;1
 font-3 = "Noto Sans Symbols2:size=10;1"
 
 modules-left =  i3
+
+wm-restack = i3
 
 [bar/rrightbar]
 override-redirect = true
@@ -169,6 +175,8 @@ tray-padding = 3
 ;tray-background = #0063ff
 
 modules-left = cpu date
+
+wm-restack = i3
 
 [bar/example]
 monitor = ${env:MONITOR:HDMI-0}
