@@ -14,6 +14,7 @@ alias v='vim'
 alias vi='vim'
 alias l='ls -l'
 alias ll='ls -la'
+alias python='python3'
 
 # add to path
 export PATH=$PATH:/home/john/OpenVSP/OpenVSP-3.17.1-Linux
