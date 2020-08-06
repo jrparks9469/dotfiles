@@ -420,7 +420,7 @@ date =
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+time-alt = 
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
