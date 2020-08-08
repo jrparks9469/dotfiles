@@ -25,6 +25,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# add directories to path
+export PATH=$PATH:/home/john/.local/bin/
+
 # keybinds
 bindkey "\e[3~" delete-char
 bindkey "\e[H"  beginning-of-line
