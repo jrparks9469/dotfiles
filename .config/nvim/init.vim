@@ -29,6 +29,8 @@ Plug 'neomake/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 filetype plugin indent on
@@ -73,5 +75,8 @@ map <C-m> :TagbarToggle<CR>
 call neomake#configure#automake('nrwi', 500)
 let g:nomake_open_list=2
 
-" deoplete config
+" deoplete/snippets config
 let g:deoplete#enable_at_startup = 1
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
