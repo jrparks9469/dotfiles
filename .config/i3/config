@@ -141,6 +141,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # start xbindkeys
 exec xbindkeys --poll-rc
 
+# start xcompmgr
+exec xcompmgr
+
 # define border width
 default_border pixel 2
 default_floating_border pixel 2
