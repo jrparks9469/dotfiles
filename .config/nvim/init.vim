@@ -40,6 +40,7 @@ syntax on
 
 set background=dark
 colorscheme gruvbox
+hi Normal guibg=None ctermbg=None
 
 " gruvbox terminal colors
 let g:gruvbox_termcolors='256'
