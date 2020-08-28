@@ -67,6 +67,7 @@ let g:Tex_CompileRule_pdf='pdflatex -synctex=1 -interaction=nonstopmode --output
 let g:Tex_ViewRuleComplete_pdf='zathura build/$*.pdf &'
 let g:Tex_IgnoredWarnings=
             \'Label(s) may have changed'
+let g:Tex_GotoError=0
 
 " toggle nerdtree and tagbar
 map <C-n> :NERDTreeToggle<CR>
