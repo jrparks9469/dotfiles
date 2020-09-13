@@ -76,6 +76,11 @@ map <C-m> :TagbarToggle<CR>
 " neomake configuration
 call neomake#configure#automake('nrwi', 500)
 let g:nomake_open_list=2
+let g:neomake_error_sign = {'texthl': 'GruvboxRedSign'}
+let g:neomake_warning_sign = {'texthl': 'GruvboxOrangeSign'}
+let g:neomake_message_sign = {'texthl': 'GruvboxYellowSign'}
+let g:neomake_info_sign = {'texthl': 'GruvboxYellowSign'}
+let g:neomake_highlight_columns = 0
 
 " deoplete/snippets config
 let g:deoplete#enable_at_startup = 1
