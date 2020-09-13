@@ -16,7 +16,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #d9282828 
+background = #e6282828 
 background-alt = #444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #ebdbb2
@@ -100,11 +100,11 @@ modules-right = pulseaudio cpu battery date
 [bar/centerbar]
 override-redirect = true
 
-width = 500
-height = 25
+width = 100%
+height = 20
 
-offset-x = 710
-offset-y = 10
+offset-x = 0
+offset-y = 0
 
 radius = 0
 fixed-center = true
@@ -112,26 +112,27 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-size = 2
+border-size = 0
 border-color = ${colors.foreground}
 
 line-size = 2
 line-color = #f00
 
 padding-left = 0
-padding-right = 5
+padding-right = 2
 
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = NotoSans:style=Regular:size=12;2
-font-1 = siji:pixelsize=11;1
-font-2 = Font Awesome 5 Free Solid:size=12;2
-font-3 = Font Awesome 5 Free Regular:size=12;2
-font-4 = Font Awesome 5 Brands Regular:size=12;2
-font-5 = FuraCode Nerd Font:size=12;3
+font-0 = NotoSans:style=Regular:size=8;2
+font-1 = siji:pixelsize=8;1
+font-2 = Font Awesome 5 Free Solid:size=10;2
+font-3 = Font Awesome 5 Free Regular:size=10;2
+font-4 = Font Awesome 5 Brands Regular:size=10;2
+font-5 = FuraCode Nerd Font:size=8;3
 
-modules-center = firefox bottom weather
+modules-left = power i3
+modules-right = pulseaudio cpu battery date
 
 [module/i3]
 type = internal/i3

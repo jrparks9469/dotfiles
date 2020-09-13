@@ -6,8 +6,8 @@ set $mod Mod4
 font xft:Hack # pango:monospace 8
 
 # Colors           border  bckgnd  text    indic   cld-brdr
-client.focused    #ebdbb2 #282828 #ebdbb2 #ebdbb2 #ebdbb2
-client.unfocused  #282828 #282828 #ebdbb2 #ebdbb2 #ebdbb2
+client.focused    #ebdbb2 #282828 #ebdbb2 #282828 #282828
+client.unfocused  #282828 #282828 #ebdbb2 #282828 #282828
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -145,7 +145,7 @@ exec xbindkeys --poll-rc
 exec xcompmgr -c &
 
 # define border width
-default_border pixel 2
+default_border pixel 0
 default_floating_border pixel 2
 hide_edge_borders none
 
@@ -155,7 +155,7 @@ exec feh --bg-scale ~/Pictures/wallpaper.jpg
 # add gaps
 gaps inner 15 
 gaps outer 0 
-gaps top 30
+gaps top 20
 
 # mouse warping
 mouse_warping none
