@@ -155,7 +155,7 @@ exec feh --bg-scale ~/Pictures/wallpaper.jpg
 # add gaps
 gaps inner 15 
 gaps outer 0 
-gaps top 20
+# gaps top 20
 
 # mouse warping
 mouse_warping none

@@ -98,7 +98,8 @@ font-4 = Font Awesome 5 Brands Regular:size=12;2
 modules-right = pulseaudio cpu battery date
 
 [bar/centerbar]
-override-redirect = true
+; override-redirect = true
+override-redirect = false
 
 width = 100%
 height = 20
