@@ -61,8 +61,10 @@ font-2 = Font Awesome 5 Free Solid:size=10;2
 font-3 = Font Awesome 5 Free Regular:size=10;2
 font-4 = Font Awesome 5 Brands Regular:size=10;2
 font-5 = FuraCode Nerd Font:size=8;3
+font-6 = NotoSansSymbols2:style=Regular:size=9;2
 
 modules-left = power
+modules-center = mpd
 modules-right = i3
 
 [bar/rightbar]
@@ -104,7 +106,12 @@ font-5 = FuraCode Nerd Font:size=8;3
 font-6 = NotoSansSymbols2:style=Regular:size=9;2
 
 modules-left = i3
-modules-right = mpd cpu date
+modules-center = mpd
+modules-right = cpu date
+
+tray-position = right
+tray-detached = true
+tray-offset-x = -80
 
 [module/i3]
 type = internal/i3
