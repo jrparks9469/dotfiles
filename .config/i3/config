@@ -18,8 +18,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# application launcher using rofi
-bindsym $mod+d exec rofi -modi drun -show drun -show-icons -display-drun 🔎
+# application launcher using rofi/dmenu
+bindsym $mod+d exec dmenu_run -h 20 -x 100 -w 1300 -fn "NotoSans:size=8" -nb "#282828" -nf "#ebdbb2" -sb "#444444" -sf "#ebdbb2"
+bindsym $mod+m exec rofi -modi drun -show drun -show-icons -display-drun 🔎
 
 # change focus
 bindsym $mod+h focus left
@@ -128,6 +129,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# define positions of displays
+exec xrandr --output DVI-D-1 --primary
+exec xrandr --output HDMI-1 --right-of DVI-D-1
+
+workspace 1 output DVI-D-1
+workspace 2 output HDMI-1
+
 # Keybindings to open programs
 bindsym Mod1+p exec pavucontrol                 # pulseaudio controller
 bindsym Mod1+m exec alacritty -e 'ncmpcpp'      # MPD Music Client
@@ -141,7 +149,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # start xbindkeys
 exec xbindkeys --poll-rc
 
-# start xcompmgr
+# start picom
 exec picom &
 
 # define border width
