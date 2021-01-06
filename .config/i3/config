@@ -138,7 +138,7 @@ workspace 2 output HDMI-1
 
 # Keybindings to open programs
 bindsym Mod1+p exec pavucontrol                 # pulseaudio controller
-bindsym Mod1+m exec alacritty -e 'ncmpcpp'      # MPD Music Client
+bindsym Mod1+m exec alacritty -e 'ncmpc'        # MPD Music Client
 bindsym Mod1+f exec alacritty -e 'ranger'       # File Manager
 bindsym Mod1+i exec firefox                     # Internet Browser
 bindsym Mod1+z exec zathura                     # pdf viewer
