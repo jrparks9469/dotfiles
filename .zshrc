@@ -20,6 +20,9 @@ prompt_context(){}
 autoload -Uz compinit
 compinit
 
+autoload bashcompinit
+bashcompinit
+
 # history
 HISTSIZE=1000
 SAVEHIST=1000
@@ -27,6 +30,11 @@ HISTFILE=~/.zsh_history
 
 # add directories to path
 export PATH=$PATH:/home/john/.local/bin/
+
+# openfoam stuff
+export FOAM_INST_DIR=/opt/OpenFOAM
+export BASH=/bin/bash
+alias ofoam="source ${FOAM_INST_DIR}/OpenFOAM-8/etc/bashrc"
 
 # keybinds
 bindkey "\e[3~" delete-char

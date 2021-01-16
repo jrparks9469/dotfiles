@@ -152,6 +152,9 @@ exec xbindkeys --poll-rc
 # start picom
 exec picom &
 
+# start birdtray
+exec birdtray &
+
 # define border width
 default_border pixel 0
 default_floating_border pixel 2
