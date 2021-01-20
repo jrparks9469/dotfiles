@@ -1,5 +1,5 @@
 # ~/.zshrc
-#
+
 # oh-my-zsh
 export ZSH=/usr/share/oh-my-zsh
 ZSH_THEME="agnoster"
@@ -20,6 +20,7 @@ prompt_context(){}
 autoload -Uz compinit
 compinit
 
+# bash completion
 autoload bashcompinit
 bashcompinit
 
@@ -35,6 +36,12 @@ export PATH=$PATH:/home/john/.local/bin/
 export FOAM_INST_DIR=/opt/OpenFOAM
 export BASH=/bin/bash
 alias ofoam="source ${FOAM_INST_DIR}/OpenFOAM-8/etc/bashrc"
+
+# completion for beets
+_get_comp_words_by_ref() { :; }
+compopt() { :; }
+_filedir() { :; }
+eval "$(beet completion)"
 
 # keybinds
 bindkey "\e[3~" delete-char
