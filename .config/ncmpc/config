@@ -20,7 +20,7 @@ port = 6600
 enable-mouse = no
 
 # Which tags shall be grouped on the library page?
-#library-page-tags = artist album
+library-page-tags = album
 
 ## A list of screens to cycle through when using
 ## the previous/next screen commands (tab and shift+tab).
