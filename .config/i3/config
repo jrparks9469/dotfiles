@@ -143,6 +143,21 @@ bindsym Mod1+f exec alacritty -e 'ranger'       # File Manager
 bindsym Mod1+i exec firefox                     # Internet Browser
 bindsym Mod1+z exec zathura                     # pdf viewer
 
+# Scratchpads
+# dropdown terminal
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] move scratchpad
+exec --no-startup-id alacritty --class "dropdown"
+
+# python shell
+for_window [instance="python"] floating enable
+for_window [instance="python"] move scratchpad
+exec --no-startup-id alacritty --class "python" -e python -q
+
+# keybindings
+bindsym Mod1+Return [instance="dropdown"] scratchpad show
+bindsym Mod1+n [instance="python"] scratchpad show
+
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
