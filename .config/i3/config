@@ -152,7 +152,7 @@ exec --no-startup-id alacritty --class "dropdown"
 # python shell
 for_window [instance="python"] floating enable
 for_window [instance="python"] move scratchpad
-exec --no-startup-id alacritty --class "python" -e python -q
+exec --no-startup-id alacritty --class "python" -e ipython --no-banner
 
 # keybindings
 bindsym Mod1+Return [instance="dropdown"] scratchpad show
@@ -169,6 +169,9 @@ exec picom &
 
 # start birdtray
 exec birdtray &
+
+# start discord
+exec discord --start-minimized &
 
 # define border width
 default_border pixel 0
