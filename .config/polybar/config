@@ -133,7 +133,7 @@ font-4 = Font Awesome 5 Brands Regular:size=10;2
 font-5 = FuraCode Nerd Font:size=8;3
 
 modules-left = power i3
-modules-right = pulseaudio cpu battery date
+modules-right = pulseaudio xbacklight cpu battery date
 
 [module/i3]
 type = internal/i3
@@ -232,24 +232,24 @@ format-charging-underline = #ffb52a
 format-discharging = <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = ""
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline= ${colors.primary}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 =
+ramp-capacity-1 =
+ramp-capacity-2 =
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 =
+animation-charging-1 =
+animation-charging-2 =
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 =
+animation-discharging-1 =
+animation-discharging-2 =
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
@@ -279,3 +279,10 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/xbacklight]
+type = internal/xbacklight
+output = eDP1
+enable-scroll = false
+format = <label>
+label = %percentage%%
