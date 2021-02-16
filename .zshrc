@@ -32,9 +32,6 @@ HISTFILE=~/.zsh_history
 # add directories to path
 export PATH=$PATH:/home/john/.local/bin/
 
-# environment variables
-EDITOR="nvim"
-
 # openfoam stuff
 export FOAM_INST_DIR=/opt/OpenFOAM
 export BASH=/bin/bash
