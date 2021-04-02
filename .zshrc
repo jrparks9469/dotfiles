@@ -48,6 +48,9 @@ bindkey "\e[3~" delete-char
 bindkey "\e[H"  beginning-of-line
 bindkey "\e[F"  end-of-line
 
+# set neovim as the default edtior
+export EDITOR='nvim'
+
 # aliases
 alias v='nvim'
 alias vi='nvim'
