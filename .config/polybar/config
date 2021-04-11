@@ -111,7 +111,7 @@ modules-right = cpu date
 
 tray-position = right
 tray-detached = true
-tray-offset-x = -80
+tray-offset-x = -105
 
 [module/i3]
 type = internal/i3
