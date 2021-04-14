@@ -60,3 +60,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias l='ls -l'
 alias ll='ls -la'
+
+# Engineering Sketch Pad
+source /home/john/.local/build/esp/src/EngSketchPad/ESPenv.sh
