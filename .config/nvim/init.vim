@@ -31,6 +31,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'vim-latex/vim-latex'
+Plug 'mboughaba/i3config.vim'
 
 call plug#end()
 filetype plugin indent on
