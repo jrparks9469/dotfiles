@@ -20,6 +20,13 @@ prompt_context(){}
 autoload -Uz compinit
 compinit
 
+# bash completion
+autoload bashcompinit
+bashcompinit
+
+# manpages
+export MANPAGER='nvim +Man!'
+
 # history
 HISTSIZE=1000
 SAVEHIST=1000
@@ -32,6 +39,9 @@ export PATH=$PATH:/home/john/.local/bin/
 bindkey "\e[3~" delete-char
 bindkey "\e[H"  beginning-of-line
 bindkey "\e[F"  end-of-line
+
+# editor
+export EDITOR='nvim'
 
 # aliases
 alias v='nvim'
