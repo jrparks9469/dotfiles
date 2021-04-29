@@ -1,0 +1,9 @@
+# recolor pdfs by default
+set recolor true
+set recolor-darkcolor '#ebdbb2'
+set recolor-lightcolor '#282828'
+
+# highlighting
+set highlight-color '#98971a'
+set highlight-active-color '#cc241d'
+set highlight-transparency '0.3'
