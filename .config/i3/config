@@ -172,5 +172,9 @@ gaps inner 15
 gaps outer 0 
 # gaps top 20
 
+# i3lock
+exec_always xautolock -locker i3lock-fancy -detectsleep
+bindsym Mod1+l exec i3lock-fancy
+
 # mouse warping
 mouse_warping none
