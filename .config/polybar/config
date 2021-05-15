@@ -58,7 +58,7 @@ font-1 = siji:pixelsize=8;1
 font-2 = Font Awesome 5 Free Solid:size=10;2
 font-3 = Font Awesome 5 Free Regular:size=10;2
 font-4 = Font Awesome 5 Brands Regular:size=10;2
-font-5 = FuraCode Nerd Font:size=8;3
+font-5 = NotoSansSymbols2-Regular:size=10;4
 
 modules-left = power i3
 modules-right = pulseaudio xbacklight cpu battery date
@@ -188,7 +188,7 @@ animation-discharging-framerate = 750
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume = 🔊 %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -216,4 +216,4 @@ type = internal/xbacklight
 output = eDP1
 enable-scroll = false
 format = <label>
-label = %percentage%%
+label = 🌣 %percentage%%
