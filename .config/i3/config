@@ -159,6 +159,9 @@ exec xbindkeys --poll-rc
 # start picom
 exec picom &
 
+# start udiskie (auto mount w/ tray icon)
+exec udiskie --no-automount --no-notify --tray &
+
 # define border width
 default_border pixel 0
 default_floating_border pixel 2
