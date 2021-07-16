@@ -28,12 +28,14 @@ Plug 'preservim/nerdtree'
 Plug 'neomake/neomake'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
+Plug 'neovim/nvim-lsp'
 Plug 'Shougo/deoplete.nvim'
-Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'deoplete-plugins/deoplete-lsp'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'vim-latex/vim-latex'
 Plug 'mboughaba/i3config.vim'
+Plug 'JuliaEditorSupport/julia-vim'
 
 call plug#end()
 filetype plugin indent on
@@ -90,3 +92,15 @@ let g:deoplete#enable_at_startup = 1
 let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+
+" julia support
+lua << EOF
+require'lspconfig'.julials.setup{}
+require'lspconfig'.pyright.setup{}
+EOF
+
+nnoremap <silent> <leader>ld    <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> <leader>lh    <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <leader>ld    <cmd>lua vim.lsp.util.show_line_diagnostics()<CR>
+nnoremap <silent> <leader>lk    <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> <leader>lr    <cmd>lua vim.lsp.buf.references()<CR>
