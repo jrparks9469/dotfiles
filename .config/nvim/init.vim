@@ -36,6 +36,7 @@ Plug 'honza/vim-snippets'
 Plug 'vim-latex/vim-latex'
 Plug 'mboughaba/i3config.vim'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'jalvesaq/nvim-R'
 
 call plug#end()
 filetype plugin indent on
@@ -97,6 +98,7 @@ let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 lua << EOF
 require'lspconfig'.julials.setup{}
 require'lspconfig'.pyright.setup{}
+require'lspconfig'.r_language_server.setup{}
 EOF
 
 nnoremap <silent> <leader>ld    <cmd>lua vim.lsp.buf.declaration()<CR>
