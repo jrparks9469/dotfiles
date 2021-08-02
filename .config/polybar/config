@@ -26,7 +26,7 @@ secondary = #cc241d
 alert = #cc241d
 
 [bar/leftbar]
-monitor = DVI-0
+monitor = HDMI-0
 
 ; override-redirect = true
 override-redirect = false
@@ -68,7 +68,7 @@ modules-center = mpd
 modules-right = i3
 
 [bar/rightbar]
-monitor = HDMI-0
+monitor = DVI-0
 
 ; override-redirect = true
 override-redirect = false
