@@ -146,6 +146,11 @@ for_window [instance="python"] floating enable
 for_window [instance="python"] move scratchpad
 exec --no-startup-id alacritty --class "python" -e ipython --no-banner
 
+# sage shell
+for_window [instance="sage"] floating enable
+for_window [instance="sage"] move scratchpad
+exec --no-startup-id alacritty --class "sage" -e sage
+
 # keybindings
 bindsym Mod1+Return [instance="dropdown"] scratchpad show
 bindsym Mod1+n [instance="python"] scratchpad show
@@ -158,6 +163,9 @@ exec xbindkeys --poll-rc
 
 # start picom
 exec picom &
+
+# discord
+exec discord --start-minimized &
 
 # start udiskie (auto mount w/ tray icon)
 exec udiskie --no-automount --no-notify --tray &
