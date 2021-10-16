@@ -162,6 +162,9 @@ exec picom &
 # start udiskie (auto mount w/ tray icon)
 exec udiskie --no-automount --no-notify --tray &
 
+# networkmanager applet
+exec --no-startup-id nm-applet --sm-disable
+
 # define border width
 default_border pixel 0
 default_floating_border pixel 2
