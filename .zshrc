@@ -38,7 +38,7 @@ export PATH=$PATH:/home/john/.local/bin/
 # openfoam stuff
 export FOAM_INST_DIR=/opt/OpenFOAM
 export BASH=/bin/bash
-alias ofoam="source ${FOAM_INST_DIR}/OpenFOAM-8/etc/bashrc"
+alias ofoam="source ${FOAM_INST_DIR}/OpenFOAM-9/etc/bashrc"
 
 # completion for beets
 _get_comp_words_by_ref() { :; }
