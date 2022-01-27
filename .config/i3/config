@@ -188,8 +188,8 @@ gaps outer 0
 # gaps top 20
 
 # i3lock
+#exec_always --no-startup-id xss-lock -l -- i3lock-fancy --nofork
 exec_always xautolock -locker i3lock-fancy -detectsleep
-exec_always --no-startup-id xss-lock -l -- i3lock-fancy --nofork
 bindsym Mod1+l exec i3lock-fancy
 
 # mouse warping
