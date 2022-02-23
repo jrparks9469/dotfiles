@@ -50,4 +50,4 @@ alias vim='nvim'
 alias l='ls -l'
 alias ll='ls -la'
 
-alias srchw='export ALTAIR_LICENSE_PATH=6200@altair-license.win.rpi.edu;export PATH=$PATH:/home/john/.altair/altair/hwcfdsolvers/acusolve/linux64/bin;export I_MPI_SHM_LMT=shm'
+alias srcmatlab='export PATH=$PATH:/home/john/.local/matlab/bin'
