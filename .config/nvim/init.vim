@@ -74,6 +74,7 @@ let g:Tex_ViewRuleComplete_pdf='zathura build/$*.pdf &'
 let g:Tex_IgnoredWarnings=
             \'Label(s) may have changed'
 let g:Tex_GotoError=0
+let g:Tex_CustomTemplateDirectory='/home/john/.config/nvim/plugged/vim-latex/ftplugin/latex-suite/templates/'
 
 " toggle nerdtree and tagbar
 map <C-n> :NERDTreeToggle<CR>
