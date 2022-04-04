@@ -26,6 +26,8 @@ secondary = #cc241d
 alert = #cc241d
 
 [bar/centerbar]
+monitor = eDP1
+
 ; override-redirect = true
 override-redirect = false
 
@@ -64,7 +66,7 @@ modules-left = i3
 modules-right = pulseaudio xbacklight cpu battery date
 
 tray-position = center
-tray-detached = true
+;tray-detached = true
 
 [module/i3]
 type = internal/i3
