@@ -170,9 +170,6 @@ exec picom &
 # start birdtray
 exec birdtray &
 
-# start discord
-exec discord --start-minimized &
-
 # start udiskie (usb mounting)
 exec udiskie --no-automount --no-notify --tray &
 
