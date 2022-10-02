@@ -176,6 +176,7 @@ exec --no-startup-id nm-applet --sm-disable
 default_border pixel 0
 default_floating_border pixel 2
 hide_edge_borders none
+for_window [class="^.*"] border pixel 0
 
 # set the background
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
