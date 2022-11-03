@@ -191,5 +191,14 @@ gaps outer 0
 exec_always xautolock -locker i3lock-fancy -detectsleep
 bindsym Mod1+l exec i3lock-fancy
 
+# xinput
+exec xinput set-button-map 'ETPS/2 Elantech Touchpad' 1 1 1 4 5 6 7
+exec xinput set-prop 'ETPS/2 Elantech Touchpad' 'libinput Natural Scrolling Enabled' 1
+exec xinput disable 'Wacom Pen and multitouch sensor Finger'
+
+# start services
+exec pkill dropbox; systemctl --user start dropbox.service
+exec systemctl --user start redshift-gtk.service
+
 # mouse warping
 mouse_warping none
